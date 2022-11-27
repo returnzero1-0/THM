@@ -1,0 +1,206 @@
+┌──(dhaval㉿kali)-[~/THM/LP_Complete_Beginner/enumSMTP]
+└─$ msfconsole           
+                                                  
+                                              `:oDFo:`                            
+                                           ./ymM0dayMmy/.                          
+                                        -+dHJ5aGFyZGVyIQ==+-                    
+                                    `:sm⏣~~Destroy.No.Data~~s:`                
+                                 -+h2~~Maintain.No.Persistence~~h+-              
+                             `:odNo2~~Above.All.Else.Do.No.Harm~~Ndo:`          
+                          ./etc/shadow.0days-Data'%20OR%201=1--.No.0MN8'/.      
+                       -++SecKCoin++e.AMd`       `.-://///+hbove.913.ElsMNh+-    
+                      -~/.ssh/id_rsa.Des-                  `htN01UserWroteMe!-  
+                      :dopeAW.No<nano>o                     :is:TЯiKC.sudo-.A:  
+                      :we're.all.alike'`                     The.PFYroy.No.D7:  
+                      :PLACEDRINKHERE!:                      yxp_cmdshell.Ab0:    
+                      :msf>exploit -j.                       :Ns.BOB&ALICEes7:    
+                      :---srwxrwx:-.`                        `MS146.52.No.Per:    
+                      :<script>.Ac816/                        sENbove3101.404:    
+                      :NT_AUTHORITY.Do                        `T:/shSYSTEM-.N:    
+                      :09.14.2011.raid                       /STFU|wall.No.Pr:    
+                      :hevnsntSurb025N.                      dNVRGOING2GIVUUP:    
+                      :#OUTHOUSE-  -s:                       /corykennedyData:    
+                      :$nmap -oS                              SSo.6178306Ence:    
+                      :Awsm.da:                            /shMTl#beats3o.No.:    
+                      :Ring0:                             `dDestRoyREXKC3ta/M:    
+                      :23d:                               sSETEC.ASTRONOMYist:    
+                       /-                        /yo-    .ence.N:(){ :|: & };:    
+                                                 `:Shall.We.Play.A.Game?tron/    
+                                                 ```-ooy.if1ghtf0r+ehUser5`    
+                                               ..th3.H1V3.U2VjRFNN.jMh+.`          
+                                              `MjM~~WE.ARE.se~~MMjMs              
+                                               +~KANSAS.CITY's~-`                  
+                                                J~HAKCERS~./.`                    
+                                                .esc:wq!:`                        
+                                                 +++ATH`                            
+                                                  `
+
+
+       =[ metasploit v6.1.39-dev                          ]
++ -- --=[ 2214 exploits - 1171 auxiliary - 396 post       ]
++ -- --=[ 616 payloads - 45 encoders - 11 nops            ]
++ -- --=[ 9 evasion                                       ]
+
+Metasploit tip: View all productivity tips with the 
+tips command
+
+msf6 > search smtp_version
+
+Matching Modules
+================
+
+   #  Name                                 Disclosure Date  Rank    Check  Description
+   -  ----                                 ---------------  ----    -----  -----------
+   0  auxiliary/scanner/smtp/smtp_version                   normal  No     SMTP Banner Grabber
+
+
+Interact with a module by name or index. For example info 0, use 0 or use auxiliary/scanner/smtp/smtp_version
+
+msf6 > use 0
+msf6 auxiliary(scanner/smtp/smtp_version) > options
+
+Module options (auxiliary/scanner/smtp/smtp_version):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   RHOSTS                    yes       The target host(s), see https://github.com/rapid7/metasploit-
+                                       framework/wiki/Using-Metasploit
+   RPORT    25               yes       The target port (TCP)
+   THREADS  1                yes       The number of concurrent threads (max one per host)
+
+msf6 auxiliary(scanner/smtp/smtp_version) > set rhosts 10.10.135.70
+rhosts => 10.10.135.70
+msf6 auxiliary(scanner/smtp/smtp_version) > options
+
+Module options (auxiliary/scanner/smtp/smtp_version):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   RHOSTS   10.10.135.70     yes       The target host(s), see https://github.com/rapid7/metasploit-
+                                       framework/wiki/Using-Metasploit
+   RPORT    25               yes       The target port (TCP)
+   THREADS  1                yes       The number of concurrent threads (max one per host)
+
+msf6 auxiliary(scanner/smtp/smtp_version) > exploit
+
+[+] 10.10.135.70:25       - 10.10.135.70:25 SMTP 220 polosmtp.home ESMTP Postfix (Ubuntu)\x0d\x0a
+[*] 10.10.135.70:25       - Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+msf6 auxiliary(scanner/smtp/smtp_version) > run
+
+[+] 10.10.135.70:25       - 10.10.135.70:25 SMTP 220 polosmtp.home ESMTP Postfix (Ubuntu)\x0d\x0a
+[*] 10.10.135.70:25       - Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+msf6 auxiliary(scanner/smtp/smtp_version) > exit
+                                                                                                      
+┌──(dhaval㉿kali)-[~/THM/LP_Complete_Beginner/enumSMTP]
+└─$ msfconsole
+                                                  
+  +-------------------------------------------------------+
+  |  METASPLOIT by Rapid7                                 |
+  +---------------------------+---------------------------+
+  |      __________________   |                           |
+  |  ==c(______(o(______(_()  | |""""""""""""|======[***  |
+  |             )=\           | |  EXPLOIT   \            |
+  |            // \\          | |_____________\_______    |
+  |           //   \\         | |==[msf >]============\   |
+  |          //     \\        | |______________________\  |
+  |         // RECON \\       | \(@)(@)(@)(@)(@)(@)(@)/   |
+  |        //         \\      |  *********************    |
+  +---------------------------+---------------------------+
+  |      o O o                |        \'\/\/\/'/         |
+  |              o O          |         )======(          |
+  |                 o         |       .'  LOOT  '.        |
+  | |^^^^^^^^^^^^^^|l___      |      /    _||__   \       |
+  | |    PAYLOAD     |""\___, |     /    (_||_     \      |
+  | |________________|__|)__| |    |     __||_)     |     |
+  | |(@)(@)"""**|(@)(@)**|(@) |    "       ||       "     |
+  |  = = = = = = = = = = = =  |     '--------------'      |
+  +---------------------------+---------------------------+
+
+
+       =[ metasploit v6.1.39-dev                          ]
++ -- --=[ 2214 exploits - 1171 auxiliary - 396 post       ]
++ -- --=[ 616 payloads - 45 encoders - 11 nops            ]
++ -- --=[ 9 evasion                                       ]
+
+Metasploit tip: Enable HTTP request and response logging 
+with set HttpTrace true
+
+msf6 > search smtp_enum
+
+Matching Modules
+================
+
+   #  Name                              Disclosure Date  Rank    Check  Description
+   -  ----                              ---------------  ----    -----  -----------
+   0  auxiliary/scanner/smtp/smtp_enum                   normal  No     SMTP User Enumeration Utility
+
+
+Interact with a module by name or index. For example info 0, use 0 or use auxiliary/scanner/smtp/smtp_enum
+
+msf6 > user 0
+[-] Unknown command: user
+msf6 > use 0
+msf6 auxiliary(scanner/smtp/smtp_enum) > options
+
+Module options (auxiliary/scanner/smtp/smtp_enum):
+
+   Name       Current Setting              Required  Description
+   ----       ---------------              --------  -----------
+   RHOSTS                                  yes       The target host(s), see https://github.com/rapi
+                                                     d7/metasploit-framework/wiki/Using-Metasploit
+   RPORT      25                           yes       The target port (TCP)
+   THREADS    1                            yes       The number of concurrent threads (max one per h
+                                                     ost)
+   UNIXONLY   true                         yes       Skip Microsoft bannered servers when testing un
+                                                     ix users
+   USER_FILE  /usr/share/metasploit-frame  yes       The file that contains a list of probable users
+              work/data/wordlists/unix_us             accounts.
+              ers.txt
+
+msf6 auxiliary(scanner/smtp/smtp_enum) > set rhosts 10.10.135.70
+rhosts => 10.10.135.70
+msf6 auxiliary(scanner/smtp/smtp_enum) > options
+
+Module options (auxiliary/scanner/smtp/smtp_enum):
+
+   Name       Current Setting              Required  Description
+   ----       ---------------              --------  -----------
+   RHOSTS     10.10.135.70                 yes       The target host(s), see https://github.com/rapi
+                                                     d7/metasploit-framework/wiki/Using-Metasploit
+   RPORT      25                           yes       The target port (TCP)
+   THREADS    1                            yes       The number of concurrent threads (max one per h
+                                                     ost)
+   UNIXONLY   true                         yes       Skip Microsoft bannered servers when testing un
+                                                     ix users
+   USER_FILE  /usr/share/metasploit-frame  yes       The file that contains a list of probable users
+              work/data/wordlists/unix_us             accounts.
+              ers.txt
+
+msf6 auxiliary(scanner/smtp/smtp_enum) > set USER_FILE /usr/share/seclists/Usernames/top-usernames-shortlist.txt
+USER_FILE => /usr/share/seclists/Usernames/top-usernames-shortlist.txt
+msf6 auxiliary(scanner/smtp/smtp_enum) > options
+
+Module options (auxiliary/scanner/smtp/smtp_enum):
+
+   Name       Current Setting              Required  Description
+   ----       ---------------              --------  -----------
+   RHOSTS     10.10.135.70                 yes       The target host(s), see https://github.com/rapi
+                                                     d7/metasploit-framework/wiki/Using-Metasploit
+   RPORT      25                           yes       The target port (TCP)
+   THREADS    1                            yes       The number of concurrent threads (max one per h
+                                                     ost)
+   UNIXONLY   true                         yes       Skip Microsoft bannered servers when testing un
+                                                     ix users
+   USER_FILE  /usr/share/seclists/Usernam  yes       The file that contains a list of probable users
+              es/top-usernames-shortlist.             accounts.
+              txt
+
+msf6 auxiliary(scanner/smtp/smtp_enum) > exploit
+
+[*] 10.10.135.70:25       - 10.10.135.70:25 Banner: 220 polosmtp.home ESMTP Postfix (Ubuntu)
+[+] 10.10.135.70:25       - 10.10.135.70:25 Users found: administrator
+[*] 10.10.135.70:25       - Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+msf6 auxiliary(scanner/smtp/smtp_enum) > exit

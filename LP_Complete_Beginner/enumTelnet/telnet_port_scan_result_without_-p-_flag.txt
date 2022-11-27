@@ -1,0 +1,50 @@
+┌──(dhaval㉿kali)-[~/THM/LP_Complete_Beginner/enumTelnet]
+└─$ nmap 10.10.5.227 -A -vv -oN telnet_port_scan_result_without_-p-_flag.txt
+
+
+# Nmap 7.92 scan initiated Sat Jul 30 17:22:39 2022 as: nmap -A -vv -oN telnet_port_scan_result_without_-p-_flag.txt 10.10.5.227
+Nmap scan report for 10.10.5.227
+Host is up, received conn-refused (0.15s latency).
+Scanned at 2022-07-30 17:22:39 IST for 16s
+Not shown: 964 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE          REASON      VERSION
+843/tcp   filtered unknown          no-response
+1007/tcp  filtered unknown          no-response
+1051/tcp  filtered optima-vnet      no-response
+1092/tcp  filtered obrpd            no-response
+1455/tcp  filtered esl-lm           no-response
+1461/tcp  filtered ibm_wrless_lan   no-response
+2007/tcp  filtered dectalk          no-response
+2038/tcp  filtered objectmanager    no-response
+2040/tcp  filtered lam              no-response
+2106/tcp  filtered ekshell          no-response
+2323/tcp  filtered 3d-nfsd          no-response
+2605/tcp  filtered bgpd             no-response
+2702/tcp  filtered sms-xfer         no-response
+3071/tcp  filtered csd-mgmt-port    no-response
+3269/tcp  filtered globalcatLDAPssl no-response
+4001/tcp  filtered newoak           no-response
+4004/tcp  filtered pxc-roid         no-response
+4279/tcp  filtered vrml-multi-use   no-response
+4445/tcp  filtered upnotifyp        no-response
+5190/tcp  filtered aol              no-response
+5432/tcp  filtered postgresql       no-response
+5862/tcp  filtered unknown          no-response
+5901/tcp  filtered vnc-1            no-response
+5959/tcp  filtered unknown          no-response
+6788/tcp  filtered smc-http         no-response
+7777/tcp  filtered cbt              no-response
+8090/tcp  filtered opsmessaging     no-response
+8500/tcp  filtered fmtp             no-response
+9575/tcp  filtered unknown          no-response
+16000/tcp filtered fmsas            no-response
+16001/tcp filtered fmsascon         no-response
+24444/tcp filtered unknown          no-response
+31038/tcp filtered unknown          no-response
+32782/tcp filtered unknown          no-response
+44501/tcp filtered unknown          no-response
+50006/tcp filtered unknown          no-response
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jul 30 17:22:55 2022 -- 1 IP address (1 host up) scanned in 16.15 seconds

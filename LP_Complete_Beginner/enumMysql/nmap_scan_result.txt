@@ -1,0 +1,24 @@
+# Nmap 7.92 scan initiated Sat Aug  6 00:18:15 2022 as: nmap -sV -vv -oN nmap_restult.txt 10.10.127.136
+Nmap scan report for 10.10.127.136
+Host is up, received conn-refused (0.14s latency).
+Scanned at 2022-08-06 00:18:15 IST for 19s
+Not shown: 987 closed tcp ports (conn-refused)
+PORT     STATE    SERVICE     REASON      VERSION
+22/tcp   open     ssh         syn-ack     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+163/tcp  filtered cmip-man    no-response
+259/tcp  filtered esro-gen    no-response
+987/tcp  filtered unknown     no-response
+1145/tcp filtered x9-icue     no-response
+1556/tcp filtered veritas_pbx no-response
+2196/tcp filtered unknown     no-response
+3306/tcp open     mysql       syn-ack     MySQL 5.7.29-0ubuntu0.18.04.1
+5810/tcp filtered unknown     no-response
+5915/tcp filtered unknown     no-response
+5959/tcp filtered unknown     no-response
+6003/tcp filtered X11:3       no-response
+7627/tcp filtered soap-http   no-response
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Aug  6 00:18:34 2022 -- 1 IP address (1 host up) scanned in 19.22 seconds

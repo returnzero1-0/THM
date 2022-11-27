@@ -1,0 +1,17 @@
+┌──(dhaval㉿kali)-[~/THM/LP_Complete_Beginner/enumSMB]
+└─$ nmap -p1-999 -vv 10.10.50.36 -oN SMB_port_scan_result.txt
+
+
+# Nmap 7.92 scan initiated Sat Jul 30 08:30:29 2022 as: nmap -p1-999 -vv -oN SMB_port_scan_result.txt 10.10.50.36
+Increasing send delay for 10.10.50.36 from 0 to 5 due to 98 out of 326 dropped probes since last increase.
+Nmap scan report for 10.10.50.36
+Host is up, received conn-refused (0.15s latency).
+Scanned at 2022-07-30 08:30:29 IST for 12s
+Not shown: 996 closed tcp ports (conn-refused)
+PORT    STATE SERVICE      REASON
+22/tcp  open  ssh          syn-ack
+139/tcp open  netbios-ssn  syn-ack
+445/tcp open  microsoft-ds syn-ack
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sat Jul 30 08:30:41 2022 -- 1 IP address (1 host up) scanned in 11.79 seconds

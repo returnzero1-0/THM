@@ -1,0 +1,2 @@
+dhaval:x:1000:1000:dhaval,,,:/home/dhaval:/usr/bin/zsh
+dhaval:$y$j9T$8DND0Up9aeIlPHvgk/6jw0$lCNFUGHYBLkbfH29IolcS6ZfCR33ARZu9Qs7c1IeRy7:19199:0:99999:7:::
