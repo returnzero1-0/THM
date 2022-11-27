@@ -1,0 +1,20 @@
+git clone https://github.com/returnzero1-0/THM.git
+
+--------------------------------------------------------------
+git init
+git config --global user.email "returntozeroinit@gmail.com"
+git config --global user.user "returnzero1-0"
+
+--------------------------------------------------------------
+git add . # this will add all files 
+
+git add <file_name> or <folder_name>
+
+git status
+--------------------------------------------------------------
+git branch -M main
+
+git commit -m "thm27112022"
+
+git push -u origin main
+--------------------------------------------------------------
